@@ -21,7 +21,7 @@ public class MainMenuScreen {
                 new TeamsMenuScreen().show();
                 break;
             case 2:
-                new ParticipantesMenusScreen().show();
+                new ParticipantsMenuScreen().show();
                 System.out.println("hola");
                 break;
             case 3:
