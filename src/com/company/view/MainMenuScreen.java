@@ -25,10 +25,10 @@ public class MainMenuScreen {
                 System.out.println("hola");
                 break;
             case 3:
-                new
+                new ResultadoMenuScreen().show();
                 break;
             case 4:
-                new
+                new ClasificacionMenuScreen.show();
                 break;
             default:
                 System.out.println("opcin no valida");
