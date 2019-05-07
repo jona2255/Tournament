@@ -1,6 +1,7 @@
 package com.company.view;
 
-public class ParticipantsMenuScreen {
+public class ClasificationMenuScreen {
+
     void show(){
 
     }
