@@ -4,11 +4,14 @@ import java.util.Scanner;
 
 public class MainMenuScreen {
 
+    Scanner scanner = new Scanner(System.in);
+
     void show(){
         System.out.println("MENU PRINCIPAL");
-
-
-        Scanner scanner = new Scanner(System.in);
+        System.out.println("1.Equipos");
+        System.out.println("2.Participantes");
+        System.out.println("3.Resultado");
+        System.out.println("4.Clasificacion");
 
         int opcion = scanner.nextInt();
 
@@ -18,7 +21,14 @@ public class MainMenuScreen {
                 new TeamsMenuScreen().show();
                 break;
             case 2:
+                new ParticipantesMenusScreen().show();
                 System.out.println("hola");
+                break;
+            case 3:
+                new
+                break;
+            case 4:
+                new
                 break;
             default:
                 System.out.println("opcin no valida");
