@@ -2,7 +2,7 @@ package com.company.view;
 
 import com.company.model.Team;
 
-public class InscribirEquiposScreen {
+public class EnrollTeamScreen {
 
     void show(){
         System.out.println("INSCRIBIR EQUIPO");
@@ -17,11 +17,11 @@ public class InscribirEquiposScreen {
 
 
         Team team = new Team();
-        team.name = "santakokk",
-        team.city= "santa coloma";
-        team.siglas "STK";
+        team.nombre = "santakokk",
+        team.ciudad = "santa coloma";
+        team.siglas = "STK";
 
-        ManagerEquipos.inscribir(team);
+//        ManagerEquipos.inscribir(team);
 
     }
 }

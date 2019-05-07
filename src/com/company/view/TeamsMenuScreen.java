@@ -1,6 +1,6 @@
 package com.company.view;
 
-public class MenuEquiposScreen {
+public class TeamsMenuScreen {
 
     void show(){
         System.out.println("EQUIPOS MENU");
@@ -8,6 +8,6 @@ public class MenuEquiposScreen {
 
         // swtich opcion
 
-        new InscribirEquiposScreen().show();
+        new EnrollTeamScreen().show();
     }
 }

@@ -15,13 +15,13 @@ public class MainMenuScreen {
 
         switch (opcion){
             case 1:
-                new MenuEquiposScreen().show();
+                new TeamsMenuScreen().show();
                 break;
             case 2:
                 System.out.println("hola");
                 break;
             default:
-                System.out.println("opcin no vaida");
+                System.out.println("opcin no valida");
         }
     }
 }
