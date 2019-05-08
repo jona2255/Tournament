@@ -22,10 +22,10 @@ public class ResultMenuScreen {
 
         switch (opcion){
             case 1:
-
+                new ResultManager().createResult();
                 break;
             case 2:
-
+                new ResultManager().listResult();
                 break;
             default:
                 System.out.println("Opcion no valida");
