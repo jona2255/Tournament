@@ -31,7 +31,7 @@ public class MainMenuScreen {
                 new ClasificationMenuScreen().show();
                 break;
             default:
-                System.out.println("opcin no valida");
+                System.out.println("opcion no valida");
         }
     }
 }
