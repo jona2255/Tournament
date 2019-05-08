@@ -29,6 +29,20 @@ public class EnrollTeamScreen {
 
         TeamManager.createTeam(team);
 
+//        Pides nº equipos;
+//
+//        for (i=0; i<ne; i++){
+//
+//            pides datos;
+//
+//
+//            pasas al fichero (escribes);
+//
+//
+//            Se sobrescribe las variables;
+//
+//        }
+
 
     }
 }
