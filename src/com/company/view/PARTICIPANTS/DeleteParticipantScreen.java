@@ -1,7 +1,6 @@
 package com.company.view.PARTICIPANTS;
 
-public class EnrollParticipantScreen {
-
+public class DeleteParticipantScreen {
     public void show(){
 
     }
