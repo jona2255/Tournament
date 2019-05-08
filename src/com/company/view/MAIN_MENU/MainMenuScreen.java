@@ -13,13 +13,16 @@ public class MainMenuScreen {
 
     public void show(){
         System.out.println("MENU PRINCIPAL");
+        System.out.println();
         System.out.println("1.Equipos");
         System.out.println("2.Participantes");
         System.out.println("3.Resultado");
         System.out.println("4.Clasificacion");
+        System.out.println();
 
         int opcion = scanner.nextInt();
 
+        System.out.println();
 
         switch (opcion){
             case 1:

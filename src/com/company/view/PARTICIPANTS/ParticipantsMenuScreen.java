@@ -23,8 +23,6 @@ public class ParticipantsMenuScreen {
                     break;
                 case 2:
                     new ModifyParticipantScreen().show();
-
-
                     System.out.println("hola");
                     break;
                 case 3:
