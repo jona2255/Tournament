@@ -1,6 +1,6 @@
 package com.company.model;
 
-public class Team {
+public class Participant {
     int id;
     public String nombre;
     public String ciudad;

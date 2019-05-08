@@ -1,9 +1,9 @@
 package com.company.view.MAIN_MENU;
 
-import com.company.view.MAIN_MENU.CLASIFICATION.ClasificationMenuScreen;
-import com.company.view.MAIN_MENU.PARTICIPANTS.ParticipantsMenuScreen;
-import com.company.view.MAIN_MENU.RESULTS.ResultMenuScreen;
-import com.company.view.MAIN_MENU.TEAM.TeamsMenuScreen;
+import com.company.view.CLASIFICATION.ClasificationMenuScreen;
+import com.company.view.PARTICIPANTS.ParticipantsMenuScreen;
+import com.company.view.RESULTS.ResultMenuScreen;
+import com.company.view.TEAM.TeamsMenuScreen;
 
 import java.util.Scanner;
 

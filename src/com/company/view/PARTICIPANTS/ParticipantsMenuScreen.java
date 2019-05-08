@@ -1,11 +1,9 @@
-package com.company.view.MAIN_MENU.PARTICIPANTS;
-
-import com.company.view.EnrollParticipantScreen;
+package com.company.view.PARTICIPANTS;
 
 import java.util.Scanner;
 
 public class ParticipantsMenuScreen {
-    void show(){
+    public void show(){
 
         Scanner scanner = new Scanner(System.in);
 

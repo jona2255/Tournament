@@ -1,5 +1,6 @@
-package com.company.view;
+package com.company.view.TEAM;
 
+import com.company.manager.TeamManager;
 import com.company.model.Team;
 
 public class EnrollTeamScreen {
@@ -17,11 +18,12 @@ public class EnrollTeamScreen {
 
 
         Team team = new Team();
-        team.nombre = "santakokk",
+        team.nombre = "santakokk";
         team.ciudad = "santa coloma";
         team.siglas = "STK";
 
-//        ManagerEquipos.inscribir(team);
+        TeamManager.createTeam(team);
+
 
     }
 }

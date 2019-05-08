@@ -1,10 +1,12 @@
 package com.company.manager;
 
+import com.company.model.Team;
+
 public class TeamManager {
 
-    void createTeam(){
+    public  static void createTeam(Team team){
 
 
-        // bufferwriter.write().....
+        // bufferwriter.write(team.nombre, ).....
     }
 }

@@ -1,9 +1,4 @@
-package com.company.view.MAIN_MENU.TEAM;
-
-import com.company.view.DeleteTeamStage;
-import com.company.view.EnrollTeamScreen;
-import com.company.view.ListTeamStage;
-import com.company.view.ModifyTeamStage;
+package com.company.view.TEAM;
 
 import java.util.Scanner;
 
@@ -11,7 +6,7 @@ public class TeamsMenuScreen {
 
     Scanner scanner = new Scanner(System.in);
 
-    void show(){
+    public void show(){
         System.out.println("EQUIPOS MENU");
         System.out.println("1.Inscribir");
         System.out.println("2.Modificar");

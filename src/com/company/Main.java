@@ -1,6 +1,6 @@
 package com.company;
 
-import com.company.view.MainMenuScreen;
+import com.company.view.MAIN_MENU.MainMenuScreen;
 
 public class Main {
 
