@@ -1,4 +1,6 @@
-package com.company.view;
+package com.company.view.MAIN_MENU.PARTICIPANTS;
+
+import com.company.view.EnrollParticipantScreen;
 
 import java.util.Scanner;
 

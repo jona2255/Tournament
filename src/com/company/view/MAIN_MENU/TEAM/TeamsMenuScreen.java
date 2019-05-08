@@ -1,4 +1,9 @@
-package com.company.view;
+package com.company.view.MAIN_MENU.TEAM;
+
+import com.company.view.DeleteTeamStage;
+import com.company.view.EnrollTeamScreen;
+import com.company.view.ListTeamStage;
+import com.company.view.ModifyTeamStage;
 
 import java.util.Scanner;
 

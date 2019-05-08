@@ -1,4 +1,4 @@
-package com.company.view;
+package com.company.view.MAIN_MENU.RESULTS;
 
 public class ResultMenuScreen {
 
