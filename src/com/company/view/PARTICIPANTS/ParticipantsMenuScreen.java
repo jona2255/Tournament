@@ -23,7 +23,6 @@ public class ParticipantsMenuScreen {
                     break;
                 case 2:
                     new ModifyParticipantScreen().show();
-                    System.out.println("hola");
                     break;
                 case 3:
                     new DeleteParticipantScreen().show();
@@ -32,7 +31,7 @@ public class ParticipantsMenuScreen {
                     new ListParticipantScreen().show();
                     break;
                 default:
-                    System.out.println("opcion no valida");
+                    System.out.println("Opción no válida");
             }
 
     }

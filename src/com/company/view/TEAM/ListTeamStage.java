@@ -9,5 +9,7 @@ public class ListTeamStage {
     void show(){
 
 
+
+       // Team[] nombres = ManagerTeam.getTeams();
     }
 }

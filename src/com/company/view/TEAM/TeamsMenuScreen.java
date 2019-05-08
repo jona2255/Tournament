@@ -7,11 +7,14 @@ public class TeamsMenuScreen {
     Scanner scanner = new Scanner(System.in);
 
     public void show(){
-        System.out.println("EQUIPOS MENU");
+        System.out.println("EQUIPOS");
+        System.out.println();
         System.out.println("1.Inscribir");
         System.out.println("2.Modificar");
         System.out.println("3.Borrar");
         System.out.println("4.Listar");
+        System.out.println();
+
         int opcion = scanner.nextInt();
 
 
@@ -29,7 +32,7 @@ public class TeamsMenuScreen {
                 new ListTeamStage().show();
                 break;
             default:
-                System.out.println("opcion no valida");
+                System.out.println("Opción no válida");
         }
     }
 }
