@@ -9,10 +9,12 @@ public class ParticipantsMenuScreen {
 
 
             System.out.println("PARTICIPANTES");
+            System.out.println();
             System.out.println("1.Inscribir participante");
             System.out.println("2.Modificar participante");
             System.out.println("3.Borrar participante");
             System.out.println("4.Listar participantes");
+            System.out.println();
 
             int opcion = scanner.nextInt();
 

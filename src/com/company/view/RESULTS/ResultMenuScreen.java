@@ -2,7 +2,11 @@ package com.company.view.RESULTS;
 
 import com.company.manager.ResultManager;
 
+import java.util.Scanner;
+
 public class ResultMenuScreen {
+
+    Scanner scanner = new Scanner(System.in);
 
     public void show(){
 
