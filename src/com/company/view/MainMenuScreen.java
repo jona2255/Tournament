@@ -6,7 +6,7 @@ public class MainMenuScreen {
 
     Scanner scanner = new Scanner(System.in);
 
-    void show(){
+    public void show(){
         System.out.println("MENU PRINCIPAL");
         System.out.println("1.Equipos");
         System.out.println("2.Participantes");
@@ -22,7 +22,6 @@ public class MainMenuScreen {
                 break;
             case 2:
                 new ParticipantsMenuScreen().show();
-                System.out.println("hola");
                 break;
             case 3:
                 new ResultMenuScreen().show();
@@ -31,7 +30,7 @@ public class MainMenuScreen {
                 new ClasificationMenuScreen().show();
                 break;
             default:
-                System.out.println("opcion no valida");
+                System.out.println("Opcion no valida");
         }
     }
 }

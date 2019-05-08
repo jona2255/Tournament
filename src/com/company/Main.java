@@ -1,13 +1,15 @@
 package com.company;
 
+import com.company.view.MainMenuScreen;
+
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("hola ");
-	// write your code here
+	    // write your code here
 
-        System.out.println("Adios  jiayuuuu");
+        new MainMenuScreen().show();
 
-        System.out.println("aaaaa");
+
+
     }
 }
