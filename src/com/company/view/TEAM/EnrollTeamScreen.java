@@ -9,6 +9,7 @@ public class EnrollTeamScreen {
 
     Scanner scanner = new Scanner(System.in);
 
+
     void show(){
 
         Team team = new Team();
@@ -28,6 +29,7 @@ public class EnrollTeamScreen {
         //  NOOOO        ManagerEquipos.inscribir(equipo, ciudad, siglas);
 
         TeamManager.createTeam(team);
+
 
 
     }

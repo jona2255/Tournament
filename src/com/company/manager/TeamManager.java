@@ -8,5 +8,8 @@ public class TeamManager {
 
 
         // bufferwriter.write(team.nombre, ).....
+
     }
+
+
 }
