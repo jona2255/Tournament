@@ -3,24 +3,29 @@ package com.company.view.TEAM;
 import com.company.manager.TeamManager;
 import com.company.model.Team;
 
+import java.util.Scanner;
+
 public class EnrollTeamScreen {
 
+    Scanner scanner = new Scanner(System.in);
+
     void show(){
-        System.out.println("INSCRIBIR EQUIPO");
-
-        System.out.println(";Nombre equipo:");
-
-        String equipo = "santako";
-        String ciudad = "SANTAKO";
-        String siglas = "stk";
-
-        //  NOOOO        ManagerEquipos.inscribir(equipo, ciudad, siglas);
-
 
         Team team = new Team();
-        team.nombre = "santakokk";
-        team.ciudad = "santa coloma";
-        team.siglas = "STK";
+
+        System.out.println("INSCRIBIR EQUIPO");
+
+        System.out.println("Nombre Equipo:");
+        team.nombre = scanner.nextLine();
+
+        System.out.println("Nombre siglas:");
+        team.siglas = scanner.nextLine();
+
+        System.out.println("Nombre ciudad:");
+        team.ciudad = scanner.nextLine();
+
+        team.id++;
+        //  NOOOO        ManagerEquipos.inscribir(equipo, ciudad, siglas);
 
         TeamManager.createTeam(team);
 

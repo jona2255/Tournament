@@ -4,7 +4,7 @@ import com.company.model.Team;
 
 public class TeamManager {
 
-    public  static void createTeam(Team team){
+    public static void createTeam(Team team){
 
 
         // bufferwriter.write(team.nombre, ).....
