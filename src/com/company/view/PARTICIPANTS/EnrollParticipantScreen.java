@@ -12,24 +12,23 @@ public class EnrollParticipantScreen {
 
     public void show(){
 
-            Participant participant = new Participant();
+        Participant participant = new Participant();
 
-            System.out.println("INSCRIBIR PARTICIPANTE");
+        System.out.println("INSCRIBIR PARTICIPANTE");
+        System.out.println();
 
-            System.out.println("Nombre del participante:");
-            participant.nombre = scanner.nextLine();
+        System.out.println("Nombre del participante:");
+        participant.nombre = scanner.nextLine();
+        System.out.println();
 
-            System.out.println("ID del equipo:");
-            participant.idEquipo = scanner.nextInt();
+        System.out.println("Nombre del equipo:");
+        participant.nombreEquipo = scanner.nextLine();
+        System.out.println();
 
-            System.out.println("Nombre del equipo:");
-            participant.nombreEquipo = scanner.nextLine();
+        participant.id++;
 
-            participant.id++;
 
-            //  NOOOO        ManagerEquipos.inscribir(equipo, nombreEquipo, idEquipo);
-
-            ParticipantManager.createParticipant(participant);
+        ParticipantManager.createParticipant(participant);
 
     }
 }
