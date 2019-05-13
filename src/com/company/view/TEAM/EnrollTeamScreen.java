@@ -3,32 +3,35 @@ package com.company.view.TEAM;
 import com.company.manager.TeamManager;
 import com.company.model.Team;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.Scanner;
 
 public class EnrollTeamScreen {
 
     Scanner scanner = new Scanner(System.in);
+    private File file = new File("Temadades.txt");
 
-
-    void show(){
+    void show() throws IOException {
 
         Team team = new Team();
+        TeamManager teamManager = new TeamManager();
 
         System.out.println("INSCRIBIR EQUIPO");
 
         System.out.println("Nombre Equipo:");
         team.nombre = scanner.nextLine();
 
-        System.out.println("Nombre idEquipo:");
+        System.out.println("Nombre siglas:");
         team.siglas = scanner.nextLine();
 
-        System.out.println("Nombre nombreEquipo:");
+        System.out.println("Nombre ciudad:");
         team.ciudad = scanner.nextLine();
 
-        team.id++;
-        //  NOOOO        ManagerEquipos.inscribir(equipo, nombreEquipo, idEquipo);
+        teamManager.id();
+        //  NOOOO        ManagerEquipos.inscribir(equipo, ciudad, siglas);
 
-        TeamManager.createTeam(team);
+        TeamManager.createTeam(team, file);
 
 //        Pides nº equipos;
 //

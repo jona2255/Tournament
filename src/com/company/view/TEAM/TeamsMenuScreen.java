@@ -1,12 +1,13 @@
 package com.company.view.TEAM;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 public class TeamsMenuScreen {
 
     Scanner scanner = new Scanner(System.in);
 
-    public void show(){
+    public void show() throws IOException {
         System.out.println("EQUIPOS");
         System.out.println();
         System.out.println("1.Inscribir");

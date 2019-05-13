@@ -5,13 +5,14 @@ import com.company.view.PARTICIPANTS.ParticipantsMenuScreen;
 import com.company.view.RESULTS.ResultMenuScreen;
 import com.company.view.TEAM.TeamsMenuScreen;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 public class MainMenuScreen {
 
     Scanner scanner = new Scanner(System.in);
 
-    public void show(){
+    public void show() throws IOException {
         System.out.println("MENU PRINCIPAL");
         System.out.println();
         System.out.println("1.Equipos");
