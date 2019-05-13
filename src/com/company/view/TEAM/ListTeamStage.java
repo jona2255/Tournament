@@ -8,7 +8,7 @@ public class ListTeamStage {
 
     void show(){
 
-
+        System.out.println("LISTAAAAA");
 
        // Team[] nombres = ManagerTeam.getTeams();
     }

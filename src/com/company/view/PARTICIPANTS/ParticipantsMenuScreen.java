@@ -7,19 +7,23 @@ public class ParticipantsMenuScreen {
 
         Scanner scanner = new Scanner(System.in);
 
+        while (true) {
 
+            System.out.println();
             System.out.println("PARTICIPANTES");
             System.out.println();
             System.out.println("1.Inscribir participante");
             System.out.println("2.Modificar participante");
             System.out.println("3.Borrar participante");
             System.out.println("4.Listar participantes");
+            System.out.println("5.Vovler");
+
             System.out.println();
 
             int opcion = scanner.nextInt();
 
 
-            switch (opcion){
+            switch (opcion) {
                 case 1:
                     new EnrollParticipantScreen().show();
                     break;
@@ -32,9 +36,11 @@ public class ParticipantsMenuScreen {
                 case 4:
                     new ListParticipantScreen().show();
                     break;
+                case 5:
+                    return;
                 default:
                     System.out.println("Opción no válida");
             }
-
+        }
     }
 }
