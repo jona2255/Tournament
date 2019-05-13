@@ -19,14 +19,14 @@ public class EnrollTeamScreen {
         System.out.println("Nombre Equipo:");
         team.nombre = scanner.nextLine();
 
-        System.out.println("Nombre siglas:");
+        System.out.println("Nombre idEquipo:");
         team.siglas = scanner.nextLine();
 
-        System.out.println("Nombre ciudad:");
+        System.out.println("Nombre nombreEquipo:");
         team.ciudad = scanner.nextLine();
 
         team.id++;
-        //  NOOOO        ManagerEquipos.inscribir(equipo, ciudad, siglas);
+        //  NOOOO        ManagerEquipos.inscribir(equipo, nombreEquipo, idEquipo);
 
         TeamManager.createTeam(team);
 
