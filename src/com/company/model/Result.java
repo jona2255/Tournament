@@ -2,9 +2,9 @@ package com.company.model;
 
 public class Result {
 
-    String participant1;
-    int result1;
-    String participant2;
-    int result2;
+    String participantLocal;
+    int resultLocal;
+    String participantVisitor;
+    int resultVisitor;
 
 }
