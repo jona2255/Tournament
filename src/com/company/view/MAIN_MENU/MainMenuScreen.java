@@ -13,33 +13,40 @@ public class MainMenuScreen {
     Scanner scanner = new Scanner(System.in);
 
     public void show() throws IOException {
-        System.out.println("MENU PRINCIPAL");
-        System.out.println();
-        System.out.println("1.Equipos");
-        System.out.println("2.Participantes");
-        System.out.println("3.Resultado");
-        System.out.println("4.Clasificacion");
-        System.out.println();
 
-        int opcion = scanner.nextInt();
+        while(true) {
+            System.out.println();
+            System.out.println("MENU PRINCIPAL");
+            System.out.println();
+            System.out.println("1.Equipos");
+            System.out.println("2.Participantes");
+            System.out.println("3.Resultado");
+            System.out.println("4.Clasificacion");
+            System.out.println("5.Salir");
+            System.out.println();
 
-        System.out.println();
+            int opcion = scanner.nextInt();
 
-        switch (opcion){
-            case 1:
-                new TeamsMenuScreen().show();
-                break;
-            case 2:
-                new ParticipantsMenuScreen().show();
-                break;
-            case 3:
-                new ResultMenuScreen().show();
-                break;
-            case 4:
-                new ClasificationMenuScreen().show();
-                break;
-            default:
-                System.out.println("Opción no válida");
+            System.out.println();
+
+            switch (opcion) {
+                case 1:
+                    new TeamsMenuScreen().show();
+                    break;
+                case 2:
+                    new ParticipantsMenuScreen().show();
+                    break;
+                case 3:
+                    new ResultMenuScreen().show();
+                    break;
+                case 4:
+                    new ClasificationMenuScreen().show();
+                    break;
+                case 5:
+                    return;
+                default:
+                    System.out.println("Opción no válida");
+            }
         }
     }
 }
