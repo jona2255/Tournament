@@ -2,14 +2,9 @@ package com.company.manager;
 
 import com.company.model.Team;
 
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 
 public class TeamManager {
-
-
 
     public static void createTeam(Team team, File file) throws IOException {
 
@@ -20,7 +15,18 @@ public class TeamManager {
         outputStream.close();
     }
 
-    public void id(){
+    public void id(File file) throws IOException {
+
+        BufferedReader inputStream = new BufferedReader(new FileReader(file));
+        String line;
+        while((line = inputStream.readLine()) != null){
+            String[] values = line.split(":");
+            String id = String.valueOf(values)+1;
+        }
+
+        inputStream.close();
+
+        return ;
 
 
     }
