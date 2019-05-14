@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class EnrollTeamScreen {
 
     Scanner scanner = new Scanner(System.in);
-    private File file = new File("Temadades.txt");
+    private File file = new File("Teamdades.txt");
 
     void show() throws IOException {
 

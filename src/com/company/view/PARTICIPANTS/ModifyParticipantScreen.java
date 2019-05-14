@@ -16,35 +16,18 @@ public class ModifyParticipantScreen {
 
         modifParticipante = scanner.nextLine();
 
-        System.out.println("¿Que quieres modificar?");
+
+        System.out.println("Introduce el nuevo nombre del participante:");
         System.out.println();
 
+        participant.nombre = scanner.nextLine();
 
-        System.out.println("1.Modificar nombre");
-        System.out.println("2.Modificar equipo");
-        System.out.println("3.Salir");
+        System.out.println("Introduce el nuevo equipo del participante:");
+        System.out.println();
 
-        int opcion = scanner.nextInt();
-
-        switch (opcion) {
-            case 1:
-                System.out.println("Introduce el nuevo nombre del participante:");
-                System.out.println();
-
-                participant.nombre = scanner.nextLine();
-
-            case 2:
-                System.out.println("Introduce el nuevo equipo del participante:");
-                System.out.println();
-
-                participant.nombreEquipo = scanner.nextLine();
-
-            case 3:
-                break;
-            default:
-                System.out.println("Opción no válida");
-
-        }
+        participant.nombreEquipo = scanner.nextLine();
 
     }
+
+}
 }
