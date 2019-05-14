@@ -4,6 +4,7 @@ import com.company.manager.TeamManager;
 import com.company.model.Team;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.Scanner;
 
 public class ModifyTeamStage {
@@ -11,7 +12,7 @@ public class ModifyTeamStage {
     Scanner scanner = new Scanner(System.in);
     private File file = new File("Temadades.txt");
 
-    void show(){
+    void show() throws IOException {
         Team team = new Team();
         TeamManager teamManager = new TeamManager();
 
@@ -27,7 +28,9 @@ public class ModifyTeamStage {
 
         switch (opcion) {
             case 1:
-                new EnrollTeamScreen().show();
+                System.out.println("Introduce nuevo nombre:");
+                String new_n = scanner.nextLine();
+                teamManager.modiyN(n_equip,new_n);
                 break;
             case 2:
                 new ModifyTeamStage().show();
@@ -35,11 +38,6 @@ public class ModifyTeamStage {
             case 3:
                 new DeleteTeamStage().show();
                 break;
-            case 4:
-                new ListTeamStage().show();
-                break;
-            case 5:
-                return;
             default:
                 System.out.println("Opción no válida");
         }

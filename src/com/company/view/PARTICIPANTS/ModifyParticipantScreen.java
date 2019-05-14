@@ -5,7 +5,7 @@ import com.company.model.Participant;
 import java.util.Scanner;
 
 public class ModifyParticipantScreen {
-    String modifParticipante = "";
+    String modifParticipante;
 
     public void show(){
         Participant participant = new Participant();
@@ -14,7 +14,7 @@ public class ModifyParticipantScreen {
         System.out.println("¿Que participante quieres modificar?");
         System.out.println();
 
-        modifParticipante = scanner.nextLine();
+         modifParticipante = scanner.nextLine();
 
 
         System.out.println("Introduce el nuevo nombre del participante:");
@@ -30,4 +30,4 @@ public class ModifyParticipantScreen {
     }
 
 }
-}
+
