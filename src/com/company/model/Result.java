@@ -4,9 +4,9 @@ import com.company.manager.ResultManager;
 
 public class Result {
 
-    String participantLocal = ResultManager.participantLocal;
-    int resultLocal = ResultManager.resultLocal;
-    String participantVisitor = ResultManager.participantVisitor;
-    int resultVisitor = ResultManager.resultVisitor;
+    public static String participantLocal;
 
+    public static int resultVisitor;
+    public static int resultLocal;
+    public static String participantVisitor;
 }
