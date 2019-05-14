@@ -4,37 +4,47 @@ package com.company.manager;
 import com.company.model.Result;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.Scanner;
 
 
 public class ResultManager {
 
+    public static String participantLocal;
+    public static int resultLocal;
+    public static String participantVisitor;
+    public static int resultVisitor;
+
     Scanner scanner = new Scanner(System.in);
 
-    File file = new File("Results");
 
     public void listResult(){
 
 
     }
 
-    public void createResult() {
+    public void createResult(Result result, File file) throws IOException {
+
+        String participantLocal;
 
         System.out.println("Introduce el nombre del participante local:");
 
-        String participantLocal = scanner.nextLine();
+        participantLocal = scanner.nextLine();
 
         System.out.println("Introduce el numero de puntos del participante local:");
 
-        int resultLocal = scanner.nextInt();
+        resultLocal = scanner.nextInt();
 
         System.out.println("Introduce el nombre del participante visitante:");
 
-        String participantVisitor = scanner.nextLine();
+        participantVisitor = scanner.nextLine();
 
         System.out.println("Introduce el numero de puntos del participante visitante:");
 
-        int resultVisitor = scanner.nextInt();
+        resultVisitor = scanner.nextInt();
+
+
+
 
     }
 }

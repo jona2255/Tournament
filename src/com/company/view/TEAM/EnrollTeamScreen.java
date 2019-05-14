@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class EnrollTeamScreen {
 
     Scanner scanner = new Scanner(System.in);
-    private File file = new File("Teamdades.txt");
+
 
     void show() throws IOException {
 
@@ -28,10 +28,10 @@ public class EnrollTeamScreen {
         System.out.println("Nombre ciudad:");
         team.ciudad = scanner.nextLine();
 
-        teamManager.id(team, file);
+        teamManager.id(team);
         //  NOOOO        ManagerEquipos.inscribir(equipo, ciudad, siglas);
 
-        TeamManager.createTeam(team, file);
+        TeamManager.createTeam(team);
 
 //        Pides nº equipos;
 //
