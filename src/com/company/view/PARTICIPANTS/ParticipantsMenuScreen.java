@@ -16,7 +16,7 @@ public class ParticipantsMenuScreen {
             System.out.println("2.Modificar participante");
             System.out.println("3.Borrar participante");
             System.out.println("4.Listar participantes");
-            System.out.println("5.Vovler");
+            System.out.println("5.Volver");
 
             System.out.println();
 
