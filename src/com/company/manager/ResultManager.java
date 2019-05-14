@@ -64,8 +64,5 @@ public class ResultManager {
 
         outputStream.close();
 
-
-
-
     }
 }

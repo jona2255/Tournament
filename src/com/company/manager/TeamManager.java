@@ -7,6 +7,7 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class TeamManager {
 
     public static void createTeam(Team team) throws IOException {

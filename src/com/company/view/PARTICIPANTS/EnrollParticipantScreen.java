@@ -3,6 +3,7 @@ package com.company.view.PARTICIPANTS;
 import com.company.manager.ParticipantManager;
 import com.company.model.Participant;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 public class EnrollParticipantScreen {
@@ -10,25 +11,23 @@ public class EnrollParticipantScreen {
     Scanner scanner = new Scanner(System.in);
 
 
-    public void show(){
+    void show() throws IOException {
 
-        Participant participant = new Participant();
+        Participant participants = new Participant();
 
         System.out.println("INSCRIBIR PARTICIPANTE");
         System.out.println();
 
         System.out.println("Nombre del participante:");
-        participant.nombre = scanner.nextLine();
+        participants.nombre = scanner.nextLine();
         System.out.println();
 
         System.out.println("Nombre del equipo:");
-        participant.nombreEquipo = scanner.nextLine();
+        participants.nombreEquipo = scanner.nextLine();
         System.out.println();
 
-        participant.id++;
+        ParticipantManager.id(participants);
 
-
-        ParticipantManager.createParticipant(participant);
-
+        ParticipantManager.createParticipant(participants);
     }
 }

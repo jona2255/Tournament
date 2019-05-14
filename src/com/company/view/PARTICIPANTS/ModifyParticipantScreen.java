@@ -1,6 +1,7 @@
 package com.company.view.PARTICIPANTS;
 
 import com.company.model.Participant;
+import com.company.model.Team;
 
 import java.util.Scanner;
 

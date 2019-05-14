@@ -1,9 +1,10 @@
 package com.company.view.PARTICIPANTS;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 public class ParticipantsMenuScreen {
-    public void show(){
+    public void show() throws IOException {
 
         Scanner scanner = new Scanner(System.in);
 

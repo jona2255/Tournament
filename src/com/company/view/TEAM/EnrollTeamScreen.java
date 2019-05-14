@@ -3,7 +3,6 @@ package com.company.view.TEAM;
 import com.company.manager.TeamManager;
 import com.company.model.Team;
 
-import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
 
@@ -32,6 +31,7 @@ public class EnrollTeamScreen {
         //  NOOOO        ManagerEquipos.inscribir(equipo, ciudad, siglas);
 
         TeamManager.createTeam(team);
+
 
 //        Pides nº equipos;
 //
