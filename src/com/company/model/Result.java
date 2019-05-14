@@ -1,6 +1,5 @@
 package com.company.model;
 
-import com.company.manager.ResultManager;
 
 public class Result {
 

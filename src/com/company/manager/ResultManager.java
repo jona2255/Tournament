@@ -39,7 +39,7 @@ public class ResultManager {
 
     }
 
-    public void createResult(Result result, File file) throws IOException {
+    public void createResult(Result result) throws IOException {
 
         System.out.println("Introduce el nombre del participante local:");
 

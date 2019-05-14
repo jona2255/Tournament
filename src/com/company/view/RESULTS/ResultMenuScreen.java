@@ -1,14 +1,18 @@
 package com.company.view.RESULTS;
 
 import com.company.manager.ResultManager;
+import com.company.model.Result;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 public class ResultMenuScreen {
 
     Scanner scanner = new Scanner(System.in);
 
-    public void show(){
+    public void show() throws IOException {
+
+        Result result = new Result();
 
         while (true) {
             System.out.println();
@@ -25,7 +29,7 @@ public class ResultMenuScreen {
 
             switch (opcion) {
                 case 1:
-                    new ResultManager().createResult();
+                    new ResultManager().createResult(result);
                     break;
                 case 2:
                     new ResultManager().listResult();
