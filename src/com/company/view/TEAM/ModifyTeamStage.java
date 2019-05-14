@@ -28,9 +28,7 @@ public class ModifyTeamStage {
 
         switch (opcion) {
             case 1:
-                System.out.println("Introduce nuevo nombre:");
-                String new_n = scanner.nextLine();
-                teamManager.modiyN(n_equip,new_n);
+                teamManager.modiyN(n_equip);
                 break;
             case 2:
                 new ModifyTeamStage().show();
