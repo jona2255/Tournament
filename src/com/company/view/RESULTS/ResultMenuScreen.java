@@ -28,6 +28,7 @@ public class ResultMenuScreen {
             System.out.println();
 
             switch (opcion) {
+
                 case 1:
                     new ResultManager().createResult(result);
                     break;
