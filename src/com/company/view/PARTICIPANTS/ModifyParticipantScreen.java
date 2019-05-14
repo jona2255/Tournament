@@ -6,8 +6,7 @@ import java.util.Scanner;
 
 public class ModifyParticipantScreen {
     String modifParticipante = "";
-
-    String modifValor = "";
+    int opcion;
 
     public void show(){
         Participant participant = new Participant();
@@ -21,21 +20,29 @@ public class ModifyParticipantScreen {
         System.out.println("¿Que quieres modificar?");
         System.out.println();
 
-        modifValor = scanner.nextLine();
 
-        if (modifValor.equals("nombre") || modifValor.equals("n")){
+        System.out.println("1.Modificar nombre");
+        System.out.println("2.Modificar equipo");
+        System.out.println("3.Salir");
 
-            System.out.println("Introduce el nuevo nombre del participante:");
-            System.out.println();
+        opcion = scanner.nextInt();
 
-            participant.nombre = scanner.nextLine();
+        switch (opcion) {
+            case 1:
+                System.out.println("Introduce el nuevo nombre del participante:");
+                System.out.println();
 
-        }else{
+                participant.nombre = scanner.nextLine();
+            case 2:
+                System.out.println("Introduce el nuevo equipo del participante:");
+                System.out.println();
 
-            System.out.println("Introduce el nuevo equipo del participante:");
-            System.out.println();
+                participant.nombreEquipo = scanner.nextLine();
+            case 3:
+                break;
+            default:
+                System.out.println("Opción no válida");
 
-            participant.nombreEquipo = scanner.nextLine();
 
         }
 
