@@ -11,16 +11,18 @@ import java.util.Scanner;
 
 public class TeamManager {
 
-    public static void createTeam(Team team) throws IOException {
+    File teamsFiletmp = new File("teamstmp.txt");
+
+    public void createTeam(Team team) throws IOException {
 
         BufferedWriter outputStream = new BufferedWriter(new FileWriter(Config.teamsFile, true));
-
+        id(team);
         outputStream.write(team.id + Config.SEP + team.nombre + Config.SEP + team.siglas + Config.SEP + team.ciudad + "\n");
 
         outputStream.close();
     }
 
-    public static void id(Team team) throws IOException {
+    public void id(Team team) throws IOException {
 
         BufferedReader inputStream = new BufferedReader(new FileReader(Config.teamsFile));
         String line;
@@ -43,7 +45,8 @@ public class TeamManager {
             Team team = new Team();
             team.id = Integer.valueOf(values[0]);
             team.nombre = values[1];
-
+            team.siglas = values[2];
+            team.ciudad = values[3];
             teams.add(team);
         }
         inputStream.close();
@@ -51,31 +54,25 @@ public class TeamManager {
         return teams;
     }
 
-    public void modiy(String e_n,int n) throws IOException {
-
+    public void modify(String e_n,int n) throws IOException {
         Scanner scanner = new Scanner(System.in);
 
-        String n_n = "";
-
         BufferedReader inputStream = new BufferedReader(new FileReader(Config.teamsFile));
-        BufferedWriter outputStream = new BufferedWriter(new FileWriter(Config.teamsFiletmp));
+        BufferedWriter outputStream = new BufferedWriter(new FileWriter(teamsFiletmp));
 
+        String n_n = "";
         switch (n){
             case 1 :
                 System.out.println("Introduce nuevo nombre:");
-                n_n = scanner.nextLine();
                 break;
             case 2 :
                 System.out.println("Introduce nuevo Ciudad:");
-                n_n = scanner.nextLine();
                 break;
             case 3 :
                 System.out.println("Introduce nuevo Siglas:");
-                n_n = scanner.nextLine();
                 break;
         }
-
-
+        n_n = scanner.nextLine();
 
         String line;
         while((line = inputStream.readLine()) != null){
@@ -99,7 +96,27 @@ public class TeamManager {
         outputStream.close();
         inputStream.close();
 
-        Config.teamsFiletmp.renameTo(Config.teamsFile);
+        teamsFiletmp.renameTo(Config.teamsFile);
+    }
 
+    public void delete(String e_n) throws IOException {
+
+        BufferedReader inputStream = new BufferedReader(new FileReader(Config.teamsFile));
+        BufferedWriter outputStream = new BufferedWriter(new FileWriter(teamsFiletmp));
+
+        String line;
+        while((line = inputStream.readLine()) != null){
+            String[] values = line.split(Config.SEP);
+
+            if(!values[0].equals(e_n) && !values[1].equals(e_n) ){
+                outputStream.write(line + "\n");
+            }
+        }
+
+        outputStream.close();
+        inputStream.close();
+
+
+        teamsFiletmp.renameTo(Config.teamsFile);
     }
 }

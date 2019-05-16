@@ -28,27 +28,7 @@ class EnrollTeamScreen {
         System.out.println("Nombre ciudad:");
         team.ciudad = scanner.nextLine();
 
-        TeamManager.id(team);
-        //  NOOOO        ManagerEquipos.inscribir(equipo, ciudad, siglas);
-
-        TeamManager.createTeam(team);
-
-
-//        Pides nº equipos;
-//
-//        for (i=0; i<ne; i++){
-//
-//            pides datos;
-//
-//
-//            pasas al fichero (escribes);
-//
-//
-//            Se sobrescribe las variables;
-//
-//        }
-
-
+        teamManager.createTeam(team);
 
     }
 }

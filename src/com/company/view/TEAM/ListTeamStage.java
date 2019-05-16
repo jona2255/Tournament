@@ -13,12 +13,12 @@ public class ListTeamStage {
 
     void show() throws IOException {
 
-        System.out.println("LISTAAAAA");
+        System.out.println("LISTA:");
 
         List<Team> teams = TeamManager.getTeams();
 
         for(Team team : teams){
-            System.out.println(team.id + " " + team.nombre);
+            System.out.println("Id:" + team.id + "  " + "Nombre:" + team.nombre+ "  " + "Siglas:" + team.siglas + "  " + "Ciudad:" + team.siglas);
         }
     }
 }
