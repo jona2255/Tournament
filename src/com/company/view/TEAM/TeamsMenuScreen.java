@@ -5,9 +5,10 @@ import java.util.Scanner;
 
 public class TeamsMenuScreen {
 
-    Scanner scanner = new Scanner(System.in);
+    private Scanner scanner = new Scanner(System.in);
 
     public void show() throws IOException {
+
         while(true) {
             System.out.println();
             System.out.println("EQUIPOS");

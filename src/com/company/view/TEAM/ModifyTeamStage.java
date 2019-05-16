@@ -7,9 +7,9 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class ModifyTeamStage {
+class ModifyTeamStage {
 
-    Scanner scanner = new Scanner(System.in);
+    private Scanner scanner = new Scanner(System.in);
     private File file = new File("Temadades.txt");
 
     void show() throws IOException {
@@ -26,20 +26,7 @@ public class ModifyTeamStage {
 
         int opcion = scanner.nextInt();
 
-        switch (opcion) {
-            case 1:
-                teamManager.modiyN(n_equip);
-                break;
-            case 2:
-                new ModifyTeamStage().show();
-                break;
-            case 3:
-                new DeleteTeamStage().show();
-                break;
-            default:
-                System.out.println("Opción no válida");
-        }
-
+        teamManager.modiy(n_equip,opcion);
 
     }
 }

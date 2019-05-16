@@ -1,14 +1,15 @@
 package com.company.view.TEAM;
 
+import com.company.Config;
 import com.company.manager.TeamManager;
 import com.company.model.Team;
 
 import java.io.IOException;
 import java.util.Scanner;
 
-public class EnrollTeamScreen {
+class EnrollTeamScreen {
 
-    Scanner scanner = new Scanner(System.in);
+    private Scanner scanner = new Scanner(System.in);
 
 
     void show() throws IOException {
@@ -27,7 +28,7 @@ public class EnrollTeamScreen {
         System.out.println("Nombre ciudad:");
         team.ciudad = scanner.nextLine();
 
-        teamManager.id(team);
+        TeamManager.id(team);
         //  NOOOO        ManagerEquipos.inscribir(equipo, ciudad, siglas);
 
         TeamManager.createTeam(team);
