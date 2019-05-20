@@ -33,7 +33,7 @@ public class ResultMenuScreen {
                     new ResultManager().createResult(result);
                     break;
                 case 2:
-                    new ResultManager().listResult();
+                    new ListResultStage().show();
                     break;
                 case 3:
                     return;

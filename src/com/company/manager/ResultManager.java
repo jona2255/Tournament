@@ -16,16 +16,17 @@ public class ResultManager {
     Scanner scanner = new Scanner(System.in);
 
 
-    public List<Result> listResult() throws IOException {
+    public static List<Result> listResult() throws IOException {
 
         List<Result> results = new ArrayList<>();
 
-        BufferedReader inputStream = new BufferedReader(new FileReader(Config.teamsFile));
+        BufferedReader inputStream = new BufferedReader(new FileReader(Config.resultFile));
         String line;
         while((line = inputStream.readLine()) != null){
             String[] values = line.split(Config.SEP);
 
             Result result = new Result();
+
             Result.participantLocal = values[0];
             result.resultLocal = Integer.valueOf(values[1]);
             Result.participantVisitor = values[2];
@@ -48,6 +49,7 @@ public class ResultManager {
         System.out.println("Introduce el numero de puntos del participante local:");
 
         Result.resultLocal = scanner.nextInt();
+        scanner.nextLine();
 
         System.out.println("Introduce el nombre del participante visitante:");
 
@@ -58,7 +60,7 @@ public class ResultManager {
         Result.resultVisitor = scanner.nextInt();
 
 
-        BufferedWriter outputStream = new BufferedWriter(new FileWriter(Config.teamsFile, true));
+        BufferedWriter outputStream = new BufferedWriter(new FileWriter(Config.resultFile, true));
 
         outputStream.write(result.participantLocal + Config.SEP + result.resultLocal + Config.SEP + result.participantVisitor + Config.SEP + result.resultVisitor + "\n");
 
