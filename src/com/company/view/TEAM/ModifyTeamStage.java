@@ -19,8 +19,8 @@ class ModifyTeamStage {
 
         System.out.println("Que quieres modificar???\n");
         System.out.println("1.Nombre");
-        System.out.println("2.Ciudad:");
-        System.out.println("3.Siglas:");
+        System.out.println("2.Siglas:");
+        System.out.println("3.Ciudad:");
 
         int opcion = scanner.nextInt();
 

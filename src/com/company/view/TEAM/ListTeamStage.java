@@ -18,7 +18,7 @@ public class ListTeamStage {
         List<Team> teams = TeamManager.getTeams();
 
         for(Team team : teams){
-            System.out.println("Id:" + team.id + "  " + "Nombre:" + team.nombre+ "  " + "Siglas:" + team.siglas + "  " + "Ciudad:" + team.siglas);
+            System.out.println("Id:" + team.id + "  " + "Nombre:" + team.nombre+ "  " + "Siglas:" + team.siglas + "  " + "Ciudad:" + team.ciudad);
         }
     }
 }

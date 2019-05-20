@@ -28,9 +28,10 @@ public class TeamManager {
         String line;
         while((line = inputStream.readLine()) != null){
             String[] values = line.split(Config.SEP);
-            team.id = Integer.parseInt(values[0])+1;
+            team.id = Integer.parseInt(values[0]);
         }
         inputStream.close();
+        team.id++;
     }
 
     public static List<Team> getTeams() throws IOException {
@@ -60,16 +61,16 @@ public class TeamManager {
         BufferedReader inputStream = new BufferedReader(new FileReader(Config.teamsFile));
         BufferedWriter outputStream = new BufferedWriter(new FileWriter(teamsFiletmp));
 
-        String n_n = "";
+        String n_n;
         switch (n){
             case 1 :
                 System.out.println("Introduce nuevo nombre:");
                 break;
             case 2 :
-                System.out.println("Introduce nuevo Ciudad:");
+                System.out.println("Introduce nuevo Sigals:");
                 break;
             case 3 :
-                System.out.println("Introduce nuevo Siglas:");
+                System.out.println("Introduce nuevo Ciudad:");
                 break;
         }
         n_n = scanner.nextLine();
@@ -77,17 +78,15 @@ public class TeamManager {
         String line;
         while((line = inputStream.readLine()) != null){
             String[] values = line.split(Config.SEP);
-
             if(values[0].equals(e_n) || values[1].equals(e_n)){
                 for (int i = 0; i < values.length; i++) {
                     if (i == n){
                         outputStream.write(n_n + Config.SEP);
-                    }else if (i == values.length-1){
-                        outputStream.write(values[i]+ "\n");
                     }else {
                         outputStream.write(values[i] + Config.SEP);
                     }
                 }
+                outputStream.write("\n");
             } else {
                 outputStream.write(line + "\n");
             }
