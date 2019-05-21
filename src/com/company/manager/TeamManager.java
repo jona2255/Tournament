@@ -67,7 +67,7 @@ public class TeamManager {
                 System.out.println("Introduce nuevo nombre:");
                 break;
             case 2 :
-                System.out.println("Introduce nuevo Sigals:");
+                System.out.println("Introduce nuevo Siglas:");
                 break;
             case 3 :
                 System.out.println("Introduce nuevo Ciudad:");

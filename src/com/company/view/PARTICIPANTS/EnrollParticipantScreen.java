@@ -26,7 +26,7 @@ public class EnrollParticipantScreen {
         participants.nombreEquipo = scanner.nextLine();
         System.out.println();
 
-        ParticipantManager.id(participants);
+
 
         ParticipantManager.createParticipant(participants);
     }

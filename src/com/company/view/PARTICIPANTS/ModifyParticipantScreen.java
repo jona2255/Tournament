@@ -1,34 +1,27 @@
 package com.company.view.PARTICIPANTS;
 
-import com.company.model.Participant;
-import com.company.model.Team;
+import com.company.manager.ParticipantManager;
 
+import java.io.IOException;
 import java.util.Scanner;
 
-public class ModifyParticipantScreen {
-    String modifParticipante;
+class ModifyParticipantScreen {
 
-    public void show(){
-        Participant participant = new Participant();
-        Scanner scanner = new Scanner(System.in);
+    private Scanner scanner = new Scanner(System.in);
 
-        System.out.println("¿Que participante quieres modificar?");
-        System.out.println();
+    void show() throws IOException {
+        ParticipantManager participantManager = new ParticipantManager();
 
-         modifParticipante = scanner.nextLine();
+        System.out.println("Introduce ID o Nombre de Equipo quieres modificar\n");
+        String n_participants = scanner.nextLine();
 
+        System.out.println("¿Que quieres modificar?\n");
+        System.out.println("1. Nombre");
+        System.out.println("2. Nombre del Equipo");
 
-        System.out.println("Introduce el nuevo nombre del participante:");
-        System.out.println();
+        int opcion = scanner.nextInt();
 
-        participant.nombre = scanner.nextLine();
-
-        System.out.println("Introduce el nuevo equipo del participante:");
-        System.out.println();
-
-        participant.nombreEquipo = scanner.nextLine();
+        participantManager.modify(n_participants,opcion);
 
     }
-
 }
-

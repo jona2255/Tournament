@@ -14,7 +14,7 @@ class ModifyTeamStage {
     void show() throws IOException {
         TeamManager teamManager = new TeamManager();
 
-        System.out.println("Introduce ID o Nombre de Equipo quieres eleminar???\n");
+        System.out.println("Introduce ID o Nombre de Equipo quieres modificar\n");
         String n_equip = scanner.nextLine();
 
         System.out.println("Que quieres modificar???\n");
