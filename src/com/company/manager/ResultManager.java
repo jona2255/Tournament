@@ -27,9 +27,9 @@ public class ResultManager {
 
             Result result = new Result();
 
-            Result.participantLocal = values[0];
+            result.participantLocal = values[0];
             result.resultLocal = Integer.valueOf(values[1]);
-            Result.participantVisitor = values[2];
+            result.participantVisitor = values[2];
             result.resultVisitor = Integer.valueOf(values[3]);
 
             results.add(result);
@@ -44,20 +44,20 @@ public class ResultManager {
 
         System.out.println("Introduce el nombre del participante local:");
 
-        Result.participantLocal = scanner.nextLine();
+        result.participantLocal = scanner.nextLine();
 
         System.out.println("Introduce el numero de puntos del participante local:");
 
-        Result.resultLocal = scanner.nextInt();
+        result.resultLocal = scanner.nextInt();
         scanner.nextLine();
 
         System.out.println("Introduce el nombre del participante visitante:");
 
-        Result.participantVisitor = scanner.nextLine();
+        result.participantVisitor = scanner.nextLine();
 
         System.out.println("Introduce el numero de puntos del participante visitante:");
 
-        Result.resultVisitor = scanner.nextInt();
+        result.resultVisitor = scanner.nextInt();
 
 
         BufferedWriter outputStream = new BufferedWriter(new FileWriter(Config.resultFile, true));
