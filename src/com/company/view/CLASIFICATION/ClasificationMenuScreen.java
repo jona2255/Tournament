@@ -2,13 +2,14 @@ package com.company.view.CLASIFICATION;
 
 import com.company.manager.ClasificationManager;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 public class ClasificationMenuScreen {
 
     Scanner scanner = new Scanner(System.in);
 
-    public void show(){
+    public void show() throws IOException {
         while (true) {
             System.out.println();
             System.out.println("CLASIFICACION");
